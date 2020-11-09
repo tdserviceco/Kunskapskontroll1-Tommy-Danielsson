@@ -1,4 +1,4 @@
-//Setup hjärtat av allt
+//Setup() hjärtat av allt
 setup = () => {
     // Välkommen i de 3 språk jag kan.
     language = ['Welcome', 'Välkommen', '歡迎']
@@ -101,7 +101,7 @@ createList = () => {
     if (lastSectionInFooter) {
         const removeHideFromSection = document.querySelector('footer');
         removeHideFromSection.children[sectionFooter.children.length - 1].classList.remove('hide');
-
+        // Loopa ut arrayen List och skicka ut en li per loop.
         list.forEach(element => {
             let li = document.createElement('li');
             li.textContent = element;
